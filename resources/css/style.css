@@ -1,16 +1,23 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 *{
     padding: 0;
     margin: 0;
     font-family: 'Josefin Sans' sans-serif;
     box-sizing: border-box;
 }
+body{
+    background-color: white;
+}
 .navbar {
     font-size: 1.15rem;
     font-weight: 500;
     z-index: 1;
-    background: wheat;
+    background-image: linear-gradient(to right,#df8bef , #08f56396);
     min-height: 10vh;
     height: 0rem;
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.5px;
+    width: 100;
 }
 
 @media only screen and (max-width: 768px) {
@@ -24,7 +31,6 @@
         font-size: 1.15rem;
         font-weight: 500;
         z-index: 1;
-        background: wheat;
         min-height: 15vh;
         height: 0rem;
     }
@@ -39,15 +45,16 @@
 }
 
 .nav-link {
-    color: rgb(176, 128, 31) !important;
-    font-weight: 600;
+    color: #302807 !important;
+    font-weight: 500;
     float: right;
     text-align: left;
     float: right;
     text-align: left;
+    max-width: 668px;
 }
 .navbar-toggler{
-    background: rgb(238, 133, 133);
+    background: rgb(154, 133, 238);
     border: none;
     padding: 10px 6px;
     outline: none;
@@ -57,12 +64,95 @@
 {
     padding: .5rem;
 }
-.nav-link.active,
+
 .nav-link:hover {
-    color: rgb(203, 159, 126) !important;
+    color: rgb(185, 62, 128) !important;
+}
+/*---------------------------------------------------ABOUT US-------------------------------------------------------*/
+.about{
+    background-color: rgb(106, 142, 174);
+}
+.about-1{
+    margin: 80px;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-1 p{
+    text-align: center;
+    padding: 8px;
+    color: rgb(66, 81, 213);
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px,30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+}
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.about-item hr{
+    width: 60px;
+    height: 100px;
+    background-color: #064022;
+    margin: 0 auto;
+    border: none;
+}
+.about-item p{
+    margin: 20px;
+    padding-left: 35px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-item:hover{
+    background-color: #0c6da9;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
 }
 
-/*---------------------------------- Carousel------------------------------------------*/
+.about-item:hoover hr{
+    background-color: #fff;
+}
+.about-item:hoover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+footer{
+    color: rgb(109, 104, 104);
+    font-weight: 300;
+    font-size: .9rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px;
+    margin: 3px auto 0;
+}
+.text-center{
+    padding: 2px;
+    padding-top: 10px;
+    margin-top: 200px;
+
+}
+/*---------------------------------- Carousel------------------------------------------*
 .carousel-item{
     height: 32rem;
     background: black;
@@ -90,6 +180,7 @@
     padding-right: 50px;
     padding-bottom: 50px;
 }
+-----------------*/
 /*-----------------------------------------------------About.html-----------------------------------*/
 .about{
     width: 100%;
@@ -125,6 +216,36 @@
     letter-spacing: 2px;
 }
 
+
+/* ---------------------------index.html Homepage css!!--------------------- */
+
+.HomepageContainer {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 2% 20%;
+
+}
+
+.homepageCarousel {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 2% 20%;
+}
+
+h1 {
+    text-align: center;
+    padding: 2%;
+    margin-top: 10%;
+}
+.Ourspaceh1{
+    color: #00f;
+}
+
+
+
+
 /*-----------------------------------------------------Post.html-----------------------------------*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -146,3 +267,58 @@
         margin: 125px 0;
     }
     }
+/*---------------------------------------------------item_form-------------------------------------------------------*/
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+}
+.wrapper h1{
+    margin-bottom: 40px;
+    font-size: 42px;
+    color: #064022;
+}
+.wrapper p{
+    margin-bottom: 40px;
+    color: #221717;
+    font-size: 20px;
+}
+.newsletter{
+    max-width: 550px;
+    width: 100%;
+    position: relative;
+}
+.newsletter .input{
+    width: 100%;
+    padding: 30px 100px 30px 60px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.newsletter .bi{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font-size: 30px;
+    color: #212226;
+}
+.newsletter .btn{
+    position: absolute;
+    top: 20%;
+    right: 20px;
+    transform: translateY(-50);
+    background: rgb(36, 36, 199);
+    padding: 15px 20px;
+    border-radius: 25px;
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    cursor: pointer;
+}
